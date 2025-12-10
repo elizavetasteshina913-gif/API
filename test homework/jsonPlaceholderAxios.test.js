@@ -9,7 +9,7 @@ describe("JSONPlaceholder API Tests", () => {
         validateStatus: () => true
     });
 
-    // 1. GET /posts1/
+    // 1. GET /posts/1/
     test("Should get post with id 1", async () => {
         const response = await apiClient.get("/posts/1");
         expect(response.status).toBe(200);
@@ -21,7 +21,7 @@ describe("JSONPlaceholder API Tests", () => {
         });
     });
 
-    // 2. GET /posts2/
+    // 2. GET /posts/2/
     test("Should get post with id 2", async () => {
         const response = await apiClient.get("/posts/2");
         expect(response.status).toBe(200);
