@@ -33,7 +33,7 @@ describe("JSONPlaceholder API Tests", () => {
         });
     });
 
-    // 3. GET /users/1
+    // 3. GET/users/1
     test("Should get user with id 1", async () => {
         const response = await apiClient.get("/users/1");
         expect(response.status).toBe(200);
