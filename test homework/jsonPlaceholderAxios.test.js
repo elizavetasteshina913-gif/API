@@ -9,7 +9,7 @@ describe("JSONPlaceholder API Tests", () => {
         validateStatus: () => true
     });
 
-    // 1. GET /posts1/
+    // 1. GET /posts/1/
     test("Should get post with id 1", async () => {
         const response = await apiClient.get("/posts/1");
         expect(response.status).toBe(200);
@@ -33,8 +33,8 @@ describe("JSONPlaceholder API Tests", () => {
         });
     });
 
-    // 3. GET /users/1
-    test("Should get user with id 1", async () => {
+    // 3. GET/users/1
+    test("Should    get user with id 1", async () => {
         const response = await apiClient.get("/users/1");
         expect(response.status).toBe(200);
         expect(response.data).toMatchObject({
