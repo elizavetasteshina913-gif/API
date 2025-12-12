@@ -21,7 +21,7 @@ describe("JSONPlaceholder API Tests", () => {
         });
     });
 
-    // 2. GET /posts/2/
+    // 2. GET /posts2/
     test("Should get post with id 2", async () => {
         const response = await apiClient.get("/posts/2");
         expect(response.status).toBe(200);
